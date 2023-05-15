@@ -78,3 +78,20 @@ const changeFridayValue = () => {
 }
 
 changeFridayValue();
+
+const zoomInOut = () => {
+  const days = document.querySelectorAll('.day');
+  
+  for (let day of days) {
+    day.addEventListener('mouseover', (event) => {
+      console.log(event.target);
+      event.target.style.fontSize = '30px';
+    })
+
+    day.addEventListener('mouseout', (event) => {
+      event.target.style.fontSize = '20px';
+    })
+  }
+};
+
+zoomInOut();
