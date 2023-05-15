@@ -45,9 +45,9 @@ O objetivo deste desafio é colocar em prática o que você estudou a respeito d
 
 1. Clone o repositório.
 
-- Use o comando: `git clone git@github.com:tryber/sd-0x-exercise-tryber-calendar.git`
+- Use o comando: `git clone git@github.com:tryber/sd-033-a-exercise-tryber-calendar.git`
 - Entre na pasta do repositório que você acabou de clonar
-  - `cd sd-0x-exercise-tryber-calendar`
+  - `cd sd-033-a-exercise-tryber-calendar`
 
 2. Instale as dependências e inicialize o projeto.
 
@@ -67,7 +67,7 @@ O objetivo deste desafio é colocar em prática o que você estudou a respeito d
 4. Crie na raiz do projeto os arquivos que você precisará desenvolver.
 
 - Verifique se você está na raiz do projeto
-  - Exemplo: `pwd` -> o retorno vai ser algo do tipo _/Users/maria/code/**sd-0x-exercise-tryber-calendar**_
+  - Exemplo: `pwd` -> o retorno vai ser algo do tipo _/Users/maria/code/**sd-033-a-exercise-tryber-calendar**_
 - Crie os arquivos index.html e style.css
   - Exemplo: `touch index.html style.css`
 
@@ -90,7 +90,7 @@ O objetivo deste desafio é colocar em prática o que você estudou a respeito d
 
 7. Crie um `Pull Request` *(PR)*.
 
-- Vá até a página de *Pull Requests* do [repositório no GitHub](https://github.com/tryber/sd-0x-exercise-tryber-calendar/pulls)
+- Vá até a página de *Pull Requests* do [repositório no GitHub](https://github.com/tryber/sd-033-a-exercise-tryber-calendar/pulls)
 - Clique no botão verde *"New pull request"*
 - Clique na caixa de seleção *"Compare"* e escolha sua branch **com atenção** - Coloque um título em seu *Pull Request*
   - Exemplo: *"Cria tela de busca"*
@@ -100,7 +100,7 @@ O objetivo deste desafio é colocar em prática o que você estudou a respeito d
 
  <img width="1335" alt="Exemplo de pull request" src="https://user-images.githubusercontent.com/42356399/166255109-b95e6eb4-2503-45e5-8fb3-cf7caa0436e5.png">
 
-- Volte até a [página de *Pull Requests* do repositório](https://github.com/tryber/sd-0x-exercise-tryber-calendar/pulls) e confira se seu *Pull Request* está criado
+- Volte até a [página de *Pull Requests* do repositório](https://github.com/tryber/sd-033-a-exercise-tryber-calendar/pulls) e confira se seu *Pull Request* está criado
 
 </details>
 <details>
