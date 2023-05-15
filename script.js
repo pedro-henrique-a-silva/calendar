@@ -40,3 +40,24 @@ const createDays = () => {
 }
 
 createDays();
+
+const changeColorHoliday = () => {
+
+  const btnHoliday = document.querySelector('#btn-holiday');
+
+  btnHoliday.addEventListener('click', () => {
+    const holidays = document.querySelectorAll('.holiday');
+
+    for (let holiday of holidays) {
+      if (!holiday.classList.contains('background-holiday')) {
+        holiday.classList.add('background-holiday');
+      } else {
+        holiday.classList.remove('background-holiday');
+      }
+    }
+  })
+
+  
+}
+
+changeColorHoliday();
