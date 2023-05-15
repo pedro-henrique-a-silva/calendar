@@ -27,6 +27,7 @@ const createDays = () => {
     const liDays = document.createElement('li');
     liDays.classList.add('day');
     liDays.innerText = decemberDay;
+    liDays.id = decemberDay;
 
     if (holidays.includes(decemberDay)) {
       liDays.classList.add('holiday');
@@ -56,8 +57,24 @@ const changeColorHoliday = () => {
       }
     }
   })
-
-  
 }
 
 changeColorHoliday();
+
+const changeFridayValue = () => {
+  const btnFridays = document.querySelector('#btn-friday');
+
+  btnFridays.addEventListener('click', () => {
+    const fridays = document.querySelectorAll('.friday');
+
+    for (let friday of fridays) {
+      if (friday.innerText === 'Sextou') {
+        friday.innerText = friday.id;
+      } else {
+        friday.innerText = 'Sextou';
+      }
+    }
+  })
+}
+
+changeFridayValue();
