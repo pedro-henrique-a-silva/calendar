@@ -18,3 +18,25 @@ const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
 
 // Escreva seu código abaixo.
 
+const createDays = () => {
+  const ulDays = document.querySelector('#days');
+  const holidays = [24, 25, 31];
+  const fridays = [4, 11, 18, 25];
+  
+  for (let decemberDay of decemberDaysList) {
+    const liDays = document.createElement('li');
+    liDays.classList.add('day');
+    liDays.innerText = decemberDay;
+
+    if (holidays.includes(decemberDay)) {
+      liDays.classList.add('holiday');
+    }
+    
+    if (fridays.includes(decemberDay)) {
+      liDays.classList.add('friday');
+    }
+    ulDays.appendChild(liDays);
+  }
+}
+
+createDays();
