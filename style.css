@@ -154,7 +154,19 @@ label {
   padding: 10px 0;
 }
 
+.holiday {
+  background-color: rgb(238,238,238);
+}
+
 .background-holiday {
   background-color: rgb(131,111,255);
   color: white !important;
+}
+
+.color-projeto {
+  color: rgb(0, 128, 0) !important;
+}
+
+.color-exercicio {
+  color: rgb(255, 0, 0) !important;
 }

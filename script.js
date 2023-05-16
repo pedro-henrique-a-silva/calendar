@@ -84,7 +84,6 @@ const zoomInOut = () => {
   
   for (let day of days) {
     day.addEventListener('mouseover', (event) => {
-      console.log(event.target);
       event.target.style.fontSize = '30px';
     })
 
@@ -95,3 +94,34 @@ const zoomInOut = () => {
 };
 
 zoomInOut();
+
+const markCalendar = () => {
+  const tasks = document.querySelectorAll('.task');
+  const days = document.querySelectorAll('.day');
+
+  for (let task of tasks) {
+    task.addEventListener('click', (event) => {
+      const selected = document.querySelector('.selected');
+      if (selected) {
+        selected.classList.remove('selected')
+      }
+
+      event.target.classList.add('selected');
+    })
+  }
+
+  for (let index = 0; index < days.length; index += 1) {
+    days[index].addEventListener('click', (event) => {
+      const selected = document.querySelector('.selected');
+
+      if (days[index].style.color !== '') {
+        days[index].style.color = '';
+      } else {
+        days[index].style.color = selected.style.backgroundColor;
+      }
+    })
+  }
+
+}
+
+markCalendar();
