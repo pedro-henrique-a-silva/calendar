@@ -102,11 +102,17 @@ const markCalendar = () => {
   for (let task of tasks) {
     task.addEventListener('click', (event) => {
       const selected = document.querySelector('.selected');
-      if (selected) {
-        selected.classList.remove('selected')
+  
+      if (event.target.classList.contains('selected')) {
+        event.target.classList.remove('selected')
+      }else {
+        event.target.classList.add('selected');
       }
 
-      event.target.classList.add('selected');
+      if (selected) {
+        selected.classList.remove('selected');
+      }
+
     })
   }
 

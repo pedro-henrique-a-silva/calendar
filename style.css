@@ -28,7 +28,7 @@ button {
 }
 
 #days li {
-  color: #777;
+  color: rgb(119, 119, 119);
   display: inline-block;
   font-size:20px;
   margin: 5px 0;
@@ -141,7 +141,7 @@ label {
 }
 
 .week-days li {
-  color: #666;
+  color: rgb(119, 119, 119);
   display: inline-block;
   text-align: center;
   vertical-align: middle;
