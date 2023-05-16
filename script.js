@@ -10,7 +10,7 @@ const createDaysOfTheWeek = () => {
 
     weekDaysList.appendChild(dayListItem);
   };
-}
+};
 
 createDaysOfTheWeek();
 
@@ -38,7 +38,7 @@ const createDays = () => {
     }
     ulDays.appendChild(liDays);
   }
-}
+};
 
 createDays();
 
@@ -57,7 +57,7 @@ const changeColorHoliday = () => {
       }
     }
   })
-}
+};
 
 changeColorHoliday();
 
@@ -75,7 +75,7 @@ const changeFridayValue = () => {
       }
     }
   })
-}
+};
 
 changeFridayValue();
 
@@ -127,7 +127,39 @@ const markCalendar = () => {
       }
     })
   }
-
-}
+  
+};
 
 markCalendar();
+
+const addTaksToTaskList = () => {
+  const taskList = document.querySelector('#task-list');
+  const taskInput = document.querySelector('#task-input');
+  const btnAddTask = document.querySelector('#btn-add');
+
+  taskInput.addEventListener('keypress' , (event) => {
+    if (event.key === 'Enter' && taskInput.value === '') {
+      alert('Compromisso não pode ser vazio')
+    }
+
+    if (event.key === 'Enter' && taskInput.value !== '') {
+      const compromisso = document.createElement('li');
+      compromisso.innerText = taskInput.value;
+      taskList.appendChild(compromisso);
+      taskInput.value = '';
+    }
+  })
+
+  btnAddTask.addEventListener('click', (event) => {
+    if (taskInput.value === '') {
+      alert('Compromisso não pode ser vazio')
+    } else {
+      const compromisso = document.createElement('li');
+      compromisso.innerText = taskInput.value;
+      taskList.appendChild(compromisso);
+      taskInput.value = '';
+    }
+  })
+}
+
+addTaksToTaskList();
